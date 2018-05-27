@@ -1,0 +1,30 @@
+[
+	{
+		"stage": "1/8",
+		"position": true
+	},
+	{
+		"stage": "1/8",
+		"position": false
+	},
+	{
+		"stage": "1/4",
+		"position": true
+	},
+	{
+		"stage": "1/4",
+		"position": false
+	},
+	{
+		"stage": "1/2",
+		"position": true
+	},
+	{
+		"stage": "1/2",
+		"position": false
+	},
+	{
+		"stage": "Final",
+		"position": true
+	}
+]
