@@ -1,0 +1,47 @@
+.grid {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	height: 100%;
+	background: aliceblue;
+
+	.stage {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0px 20px;
+
+		&:nth-child(2) {
+			order: 4;
+		}
+		&:nth-child(4) {
+			order: 3;
+		}
+		&:nth-child(6) {
+			order: 2;
+		}
+
+		.match {
+			display: flex;
+			flex-flow: row wrap;
+
+			width: 200px;
+			height: 100px;
+
+			margin: 10px;
+			padding: 20px;
+			border-radius: 20px;
+			background: cadetblue;
+			text-align: center;
+
+			.match-title {
+				flex-basis: 100%;
+			}
+
+			.match-member {
+				flex-basis: 50%;
+			}
+
+		}
+	}
+}

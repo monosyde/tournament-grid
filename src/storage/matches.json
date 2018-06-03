@@ -1,0 +1,92 @@
+[
+	{
+		"stage": "1/8",
+		"firstMember": "Brazil",
+		"secondMember": "England",
+		"position": true
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Russia",
+		"secondMember": "Portugal",
+		"position": true
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "France",
+		"secondMember": "Germany",
+		"position": false
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Argentina",
+		"secondMember": "Spain",
+		"position": false
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Japan",
+		"secondMember": "Poland",
+		"position": false
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Sweden",
+		"secondMember": "Mexico",
+		"position": false
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Uruguay",
+		"secondMember": "Peru",
+		"position": true
+	},
+	{
+		"stage": "1/8",
+		"firstMember": "Croatia",
+		"secondMember": "Belgium",
+		"position": true
+	},
+	{
+		"stage": "1/4",
+		"firstMember": "Spain",
+		"secondMember": "Germany",
+		"position": false
+	},
+	{
+		"stage": "1/4",
+		"firstMember": "Poland",
+		"secondMember": "Sweden",
+		"position": false
+	},
+	{
+		"stage": "1/4",
+		"firstMember": "Russia",
+		"secondMember": "Brazil",
+		"position": true
+	},
+	{
+		"stage": "1/4",
+		"firstMember": "Uruguay",
+		"secondMember": "Belgium",
+		"position": true
+	},
+	{
+		"stage": "1/2",
+		"firstMember": "Sweden",
+		"secondMember": "Germany",
+		"position": false
+	},
+	{
+		"stage": "1/2",
+		"firstMember": "Russia",
+		"secondMember": "Belgium",
+		"position": true
+	},
+	{
+		"stage": "Final",
+		"firstMember": "Russia",
+		"secondMember": "Germany",
+		"position": true
+	}
+]
