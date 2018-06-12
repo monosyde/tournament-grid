@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	height: 100%;
+	// height: 100%;
 	background: aliceblue;
 
 	.stage {
@@ -21,27 +21,31 @@
 			order: 2;
 		}
 
-		.match {
-			display: flex;
-			flex-flow: row wrap;
+		.round {
+			margin: 20px 0px;
 
-			width: 200px;
-			height: 100px;
+			.match {
+				display: flex;
 
-			margin: 10px;
-			padding: 20px;
-			border-radius: 20px;
-			background: cadetblue;
-			text-align: center;
+				margin: 20px 10px;
+				padding: 20px;
+				border-radius: 20px;
+				background: cadetblue;
+				text-align: center;
 
-			.match-title {
-				flex-basis: 100%;
+				.match-title {
+					flex-basis: 100%;
+				}
+
+				.match-member {
+					flex-basis: 50%;
+					align-self: center;
+				}
+
+				.logo {
+					padding-right: 10px;
+				}
 			}
-
-			.match-member {
-				flex-basis: 50%;
-			}
-
 		}
 	}
 }
