@@ -1,5 +1,5 @@
 <template>
-	<div :class="['stage stage-' + getClass()]">
+	<div class="stage">
 		<round-component v-for="(match, index) in filteredItems"
 			v-bind:key="index"
 			v-bind:stage="match.stage"

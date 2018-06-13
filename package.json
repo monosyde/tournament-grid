@@ -17,7 +17,8 @@
 	"dependencies": {
 		"less": "^3.0.4",
 		"vue": "^2.5.16",
-		"vue-router": "^3.0.1"
+		"vue-router": "^3.0.1",
+		"vue-truncate-filter": "^1.1.7"
 	},
 	"devDependencies": {
 		"css-loader": "^0.28.11",

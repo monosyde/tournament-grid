@@ -1,15 +1,31 @@
 <template>
-	<div class="grid">
-		<stage-component v-for="(stage, index) in stages"
-			v-bind:key="index"
-			v-bind:stage="stage.stage"
-			v-bind:position="stage.position">
-		</stage-component>
+	<div class="content">
+		<div class="header">
+			<div class="title-container">
+				<div class="title">ПЛЭЙ-ОФФ</div>
+			</div>
+			<div class="stages-container">
+				<div class="name">1/8</div>
+				<div class="name">1/4</div>
+				<div class="name">1/2</div>
+				<div class="name">Финал</div>
+				<div class="name">1/2</div>
+				<div class="name">1/4</div>
+				<div class="name">1/8</div>
+			</div>
+		</div>
+		<div class="grid">
+			<stage-component v-for="(stage, index) in stages"
+				v-bind:key="index"
+				v-bind:stage="stage.stage"
+				v-bind:position="stage.position">
+			</stage-component>
+		</div>
 	</div>
 </template>
 <script>
 	import Stage from "./components/Stage.vue";
-	import StagesJSON from './storage/stages.json'
+	import StagesJSON from './storage/stages.json';
 
 	export default {
 		data() {
