@@ -1,12 +1,17 @@
 <template>
-	<div class="stage">
-		<round-component v-for="(match, index) in filteredItems"
-			v-bind:key="index"
-			v-bind:stage="match.stage"
-			v-bind:firstMember="match.firstMember"
-			v-bind:secondMember="match.secondMember"
-			v-bind:position="match.position">
-		</round-component>
+	<div class="stage-container">
+		<div class="stage-title">
+			<div class="name">{{ stage }}</div>
+		</div>
+		<div class="stage-element">
+			<round-component v-for="(match, index) in filteredItems"
+				v-bind:key="index"
+				v-bind:stage="match.stage"
+				v-bind:firstMember="match.firstMember"
+				v-bind:secondMember="match.secondMember"
+				v-bind:position="match.position">
+			</round-component>
+		</div>
 	</div>
 </template>
 <script>
@@ -26,7 +31,7 @@
 				}
 
 				return "right";
-			}
+			},
 		},
 		beforeMount(){
 			this.getMatches()

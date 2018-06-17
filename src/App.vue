@@ -4,15 +4,6 @@
 			<div class="title-container">
 				<div class="title">ПЛЭЙ-ОФФ</div>
 			</div>
-			<div class="stages-container">
-				<div class="name">1/8</div>
-				<div class="name">1/4</div>
-				<div class="name">1/2</div>
-				<div class="name">Финал</div>
-				<div class="name">1/2</div>
-				<div class="name">1/4</div>
-				<div class="name">1/8</div>
-			</div>
 		</div>
 		<div class="grid">
 			<stage-component v-for="(stage, index) in stages"
