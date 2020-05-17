@@ -1,17 +1,22 @@
 <template>
-	<div :class="['stage stage-' + getClass()]">
-		<match-component v-for="(match, index) in filteredItems"
-			v-bind:key="index"
-			v-bind:stage="match.stage"
-			v-bind:firstMember="match.firstMember"
-			v-bind:secondMember="match.secondMember"
-			v-bind:position="match.position">
-		</match-component>
+	<div class="stage-container">
+		<div class="stage-title">
+			<div class="name">{{ stage }}</div>
+		</div>
+		<div class="stage-element">
+			<round-component v-for="(match, index) in filteredItems"
+				v-bind:key="index"
+				v-bind:stage="match.stage"
+				v-bind:firstMember="match.firstMember"
+				v-bind:secondMember="match.secondMember"
+				v-bind:position="match.position">
+			</round-component>
+		</div>
 	</div>
 </template>
 <script>
 	import MatchesJSON from '../storage/matches.json'
-	import Match from "./Match.vue";
+	import Round from "./Round.vue";
 
 	export default {
 		props: ["stage", "position"],
@@ -26,7 +31,7 @@
 				}
 
 				return "right";
-			}
+			},
 		},
 		beforeMount(){
 			this.getMatches()
@@ -44,7 +49,7 @@
 			}
 		},
 		components: {
-			MatchComponent: Match,
+			RoundComponent: Round,
 		},
 	}
 </script>

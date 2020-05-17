@@ -27,6 +27,14 @@ module.exports = {
 					},
 				},],
 			},
+			{
+				test: /\.(png|jpe?g|gif|svg)$/,
+				loader: 'url-loader',
+				query: {
+					limit: 10000, // 10KO
+					name: 'icons/[name].[ext]'
+				}
+			}
 		]
 	},
 	plugins: [
